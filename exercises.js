@@ -106,8 +106,15 @@ console.log(mustBeTrue(true));
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
-
-
+function bigBird(word){
+	if (word.length === 3){
+		return "Word to Big Bird!";
+	}else{
+		return "NOPE";
+	}
+	
+}
+console.log(bigBird("ask"));
 
 /*
  * #6
@@ -121,7 +128,14 @@ console.log(mustBeTrue(true));
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
-
+function isEqual(first, second){
+	if (first === second){
+		return "You look mahvelous!";
+	}else{
+		return "I don't know who you are anymore.";
+	}
+}
+console.log(isEqual("Cher","Sally"));
 
 /*
  * #7
