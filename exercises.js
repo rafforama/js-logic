@@ -256,7 +256,7 @@ console.log(daClub(5, 5));
  * Console.log your result.
 */ 
 function graduation(credits, thesis){
-	if (credits >= 120 || true){
+	if (credits >= 120 || thesis === true){
 		return "Congraulations on a job well done.";
 	}else{
 		return "See you in summer school.";
@@ -275,7 +275,17 @@ console.log(graduation(100, true));
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
+function moneyTrain(speed){
+	if (speed < 50){
+		return "You are riding Honolulu's Rail.";
+	}else if (speed < 100){
+		return "You are riding an Amtrak.";
+	}else{
+		return "Now you ballin' in the shinkansen!";
 
+	}
+}
+console.log(moneyTrain(99));
 
 /*
  * #14
