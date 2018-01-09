@@ -402,7 +402,15 @@ for (var i = 0; i < myFavFoods.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+var numArray = [1,3,5,6,7];
+var total = 0;
 
+function sumItUp(arr){
+	for (var i = 0; i < arr.length; i++){
+		total += arr[i];
+	}return total;
+}
+console.log(sumItUp(numArray));
 
 
 /*
