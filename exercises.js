@@ -455,8 +455,24 @@ console.log(east);
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+  
 
+  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+  var newArray = [];
+  var sideArray = [];
+
+function subways(special){
+	for (var i=0; i < special.length; i++){
+		if (i % 2 === 0){
+			newArray.push(special[i+1]);
+		}else{
+			sideArray.push(special[i+1]);
+		}
+	}
+}
+console.log(subways(subOftheDay));
+console.log(newArray);
+console.log(sideArray);
 
 /*
 Final Boss
@@ -471,16 +487,25 @@ Final Boss
 */
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
- 
+var stinkingArray = [];
+function removeLetter(str){
+	for (var i=0; i < str.length; i++){
+		if (str.charAt(i)  !== "a" && str.charAt(i) !== "A" & str.charAt(i) !== " "){
+			stinkingArray.push(str.charAt(i));
+		
+		}
+
+		
+			
+	
+	}
+
+}  
+
+removeLetter(phrase);
+console.log(stinkingArray);
+
+
   
-  
-
-
-
-
-
-
-
-
 
 
